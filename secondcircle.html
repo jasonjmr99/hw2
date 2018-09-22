@@ -4,29 +4,35 @@ function setup() {
 
 var x = 10;
 var changeInX = 3;
-var y = 13
+var y = -10
+var changeInY = -3
 
 function draw() {
     background(220);
-
-    ellipse(x, 200, 40);
-   ellipse(x, 100, 40);
-
-    x = x + changeInX;
   
-   if (y > width) {
-        changeInX = 300;
-    }
+  ellipse(10, x, 40);
+  
+  x = x + changeInX;
 
-    if (y < 0) {
-        changeInX = 3;
-    }
+  x = x + changeInX;
 
-    if (x > width) {
+    if (x > height) {
         changeInX = -3;
     }
 
     if (x < 0) {
         changeInX = 3; }
+    
+  ellipse(x, 200, 40);
+
+    x = x + changeInX;
+
+    if (x > height) {
+        changeInX = -3;
+    }
+
+    if (x < 0) {
+        changeInX = 3;
+    }
 }
-       
+      
