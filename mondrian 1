@@ -1,0 +1,38 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(240);
+  
+  noStroke();
+  strokeCap(SQUARE);
+  
+  var blue = color(0,0, 255)
+  var red = color(255, 0, 0) 
+  var yellow = color(255, 255, 0) 
+
+  
+  
+  fill(blue);
+  rect(mouseX, 320, 80, 80);
+  
+  fill(red);
+  rect(mouseY, 0, 320, 320) 
+  
+  fill(yellow)
+  rect( 370, 360, 30, 40)
+  
+  stroke(0);
+  strokeWeight(10)
+  line(80, 0, 80, 400); // left line
+  line(0, 320, 400, 320); //middle line
+  line(370, 320, 370, 400); //right line
+  
+  strokeWeight(15);
+ 
+  line(370, 360, 400, 360); //bottom
+  
+  strokeWeight(20);
+  line(0, 140, 80, 140)
+} 
