@@ -1,0 +1,32 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(240);
+  
+  noStroke();
+  strokeCap(SQUARE);
+  
+  fill(0, 0, 255);
+  rect(0, 320, 80, 80);
+  
+  fill(255, 0, 0);
+  rect(80, 0, 320, 320) 
+  
+  fill(255, 255, 0)
+  rect( 370, 360, 30, 40)
+  
+  stroke(0);
+  strokeWeight(10)
+  line(mouseX, 0, 80, 400); // left line
+  line(0, mouseY, 400, 320); //middle line
+  line(370, 320, mouseX, 400); //right line
+  
+  strokeWeight(15);
+ 
+  line(370, 360, mouseX, 360); //bottom
+  
+  strokeWeight(20);
+  line(0, mouseY, 80, 140)
+} 
